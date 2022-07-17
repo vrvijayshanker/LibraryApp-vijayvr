@@ -21,7 +21,7 @@
                 <small class="text-danger" [class.d-none]="email.valid || email.touched">Enter Valid Email</small>
                 <input type="password" name="pwd" class="form-control my-3 py-2" placeholder="Password" [(ngModel)]="User.pwd" minlength="6" required>
                 <div class="text-center mt-3">
-                  <button [disabled]="userlogin.form.invalid" class="btn btn-success my-2 px-5" style="border-radius:25px">Login</button><br>
+                  <button [disabled]="userlogin.form.invalid" class="btn btn-success my-2 px-5" style="border-radius:25px" (click)="moveToDashtemp()" >Login</button><br>
                   <button type="submit" class="btn btn-primary" (click)="moveToRegister()" style="border-radius:25px">
                     Not a Member? Sign-up
                   </button>

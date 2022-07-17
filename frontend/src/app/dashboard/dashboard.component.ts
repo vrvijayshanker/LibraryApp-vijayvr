@@ -24,6 +24,8 @@ export class DashboardComponent implements OnInit {
     this._router.navigate(['/newbook']);
   }
 
-  
+  moveToHometemp(){
+    this._router.navigate(['/login']);
+  }
 
 }

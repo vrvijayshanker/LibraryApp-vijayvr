@@ -30,6 +30,11 @@ export class UserloginComponent implements OnInit {
     this._router.navigate(['/signup']);
   }
 
+  moveToDashtemp(){
+    this._router.navigate(['/dashboard']);
+  }
+
+
   userVerify(){
     // this._auth.userVerify(this.User);
     // console.log("Logged in successfully");
