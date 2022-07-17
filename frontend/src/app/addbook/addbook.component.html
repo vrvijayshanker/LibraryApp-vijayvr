@@ -1,0 +1,42 @@
+<section>
+    <div class="container mt-2 pt-2">
+     
+      
+        <div class="col-12 col-sm-8 col-md-6 m-auto">
+          <div class="card border-0 shadow ">
+            <div class="card-header text-center bg-black text-light">
+              <h5>Add New Book</h5>
+            </div>
+            <div class="mx-4 my-2">            
+              
+                <form action="">
+                  <div class="card mt-3">
+                    <div class="mt-2">
+                        <input class="form-control" type="text" [(ngModel)] = "title" name="title" id="title" placeholder="Book Title" required>
+                    </div>
+
+                    <div class="mt-2">
+                        <input class="form-control" type="text" [(ngModel)] = "author" name="author" id="author" placeholder="Author" required>    
+                    </div>
+
+                    <div class="mt-2">
+                        <textarea class="form-control" [(ngModel)] = "description" name="description" id="description" cols="30" rows="5" placeholder="Description"></textarea>
+                    </div>
+                    
+                  </div>
+                  <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-secondary shadow" (click)="moveToDash()">To Dashboard</button>
+                    <button class="btn btn-success shadow" (click)="onSave()">Save</button>
+                  </div>
+                </form>
+  
+            </div>
+          </div>
+        </div>
+      
+    </div>    
+  </section>
+  
+  
+  
+  

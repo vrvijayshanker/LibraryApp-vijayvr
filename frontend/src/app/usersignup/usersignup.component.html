@@ -1,0 +1,41 @@
+<section>
+  <div class="container mt-2 pt-2">
+   
+    <div class="row">
+      <div class="col-12 col-sm-8 col-md-6 m-auto">
+        <div class="card border-0 shadow">
+          <div class="card-header text-center bg-black text-light">
+            <h5>Sign-up</h5>
+          </div>
+          <div class="mx-4 my-2">            
+            
+              <form action="" [formGroup]="registerForm" #frm="ngForm">
+                <div class="card mt-3">
+                  <div class="mb-2">
+                    <input formControlName="uname" type="text" [(ngModel)]="fname" name="fname" class="form-control" id="fname" placeholder="Name" ngModel required>
+                  </div>
+                  <div class="mb-2">
+                    <input formControlName="email" type="email" [(ngModel)]="email" name="email" class="form-control" id="email" placeholder="Email" ngModel required>          
+                  </div>
+                  <div class="mb-2">
+                    <input formControlName="password" type="password" [(ngModel)]="password" name="password" class="form-control" id="pass" placeholder="Password" ngModel>          
+                  </div>
+                  <div class="mb-2">
+                    <input formControlName="repass" type="password" [(ngModel)]="repass" name="rpswd" class="form-control" id="rpass" placeholder="Re-enter Password" ngModel>          
+                  </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                  <button type="button" class="btn btn-secondary" (click)="moveToLogin()">Back to login</button>
+                  <button type="button" class="btn btn-primary" (click)="register()">Register</button>
+                </div>
+              </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>    
+</section>
+
+
+
