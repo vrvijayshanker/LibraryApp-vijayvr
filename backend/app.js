@@ -4,6 +4,7 @@ const cors = require('cors');
 const { init } = require('./dbconnect');
 const BookModel = require('./models/book');
 const UserModel = require('./models/user');
+const { isObjectIdOrHexString, isValidObjectId } = require('mongoose');
 
 const app = express();
 
@@ -19,12 +20,13 @@ app.get('/books', async (req, res) =>{
   res.status(200).send(books);
 });
 
-//add new book to db
+//ADD new book to db
 app.post('/books', async (req,res) => {
   const book = req.body;
   const newbook = await BookModel.create(book);
   res.status(201).send(newbook);
 });
+
 
 //add new user to db
 app.post('/users', async (req,res) => {

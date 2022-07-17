@@ -9,7 +9,8 @@ import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
-import { AddbookComponent } from './addbook/addbook.component'
+import { AddbookComponent } from './addbook/addbook.component';
+import { EditbookComponent } from './editbook/editbook.component'
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AddbookComponent } from './addbook/addbook.component'
     HeaderComponent,
     routingComponents,
     DashboardComponent,
-    AddbookComponent
+    AddbookComponent,
+    EditbookComponent
   ],
   imports: [
     BrowserModule,
